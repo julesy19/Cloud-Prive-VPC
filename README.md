@@ -11,13 +11,18 @@ créer un sous-réseau privé ;
 créer une passerelle Internet et l'attacher au VPC ;
 créer un serveur d'application pour tester le VPC. 
 
+
+
 <------------------------>
+
 
 
 <img width="985" height="619" alt="image" src="https://github.com/user-attachments/assets/29204369-768e-4ff8-b6bb-2e9a3a4fc9b0" />
 
 
+
 <------------------------->
+
 
 
 # Tâche 1 : création d'un VPC
@@ -50,6 +55,7 @@ Toutes les instances EC2 lancées dans le VPC reçoivent désormais automatiquem
 
 
 
+
 <img width="1498" height="221" alt="image" src="https://github.com/user-attachments/assets/81a20098-8c5b-4fb7-a1f8-6489faa4d27e" />
 
 
@@ -59,13 +65,19 @@ Toutes les instances EC2 lancées dans le VPC reçoivent désormais automatiquem
 
 
 
+
 <------------------>
+
+
 
 
 <img width="1346" height="530" alt="image" src="https://github.com/user-attachments/assets/012fbe06-6bcc-4633-aff3-34bb52f5a518" />
 
 
+
 <------------------->
+
+
 
 # Tâche 2 : création de sous-réseaux
 Un sous-réseau est une sous-plage d'adresses IP dans le VPC. Les ressources AWS peuvent être lancées dans un sous-réseau spécifié. Utilisez un sous-réseau public pour les ressources qui doivent être connectées à Internet, et un sous-réseau privé pour les ressources qui doivent rester isolées d'Internet.
@@ -73,11 +85,15 @@ Un sous-réseau est une sous-plage d'adresses IP dans le VPC. Les ressources AWS
 Au cours de cette tâche, vous allez créer un sous-réseau public et un sous-réseau privé :
 
 
+
 <img width="821" height="381" alt="image" src="https://github.com/user-attachments/assets/713df666-1cc7-4b8c-bf0e-dbae0f26db16" />
 
 
 
+
 <----------==>
+
+
 
 # Tâche 2.1 : création d'un sous-réseau public
 Au cours de cette tâche, vous allez créer un sous-réseau public. Le sous-réseau public sera utilisé pour les ressources accessibles sur Internet.
@@ -99,22 +115,29 @@ Sélectionnez Enregistrer.
 Ce sous-réseau a été nommé Sous-réseau public, mais il n'est pas encore public. Un sous-réseau public doit avoir une passerelle Internet, que vous allez attacher dans la tâche suivante.
 
 
+
 <img width="1161" height="778" alt="image" src="https://github.com/user-attachments/assets/79b89259-5f44-4dab-a174-c2e8b95a1a61" />
+
 
 
 <------------------->
 
 
+
 <img width="1512" height="247" alt="image" src="https://github.com/user-attachments/assets/223a6c91-a0f3-4734-9121-adb1d71b49af" />
 
 
+
 <------------------>
+
 
 
 <img width="1134" height="540" alt="image" src="https://github.com/user-attachments/assets/0eb4c8a0-783c-4099-807b-1727e74cb37f" />
 
 
+
 <------------------>
+
 
 
 # Tâche 2.2 : création d'un sous-réseau privé
@@ -130,13 +153,17 @@ Choisissez Créer un sous-réseau.
 Votre VPC possède désormais deux sous-réseaux. Toutefois, le sous-réseau public est totalement isolé et ne peut pas communiquer avec des ressources en dehors du VPC. Vous allez configurer le sous-réseau public pour qu'il se connecte à Internet par le biais d'une passerelle Internet.
 
 
+
 <-------------------->
+
 
 
 <img width="1127" height="777" alt="image" src="https://github.com/user-attachments/assets/82e61ad9-bc51-4a24-9871-fee5ad5c8b96" />
 
 
+
 <---------------------->
+
 
 
 
@@ -144,7 +171,10 @@ Votre VPC possède désormais deux sous-réseaux. Toutefois, le sous-réseau pub
 
 
 
+
  <--------------------->
+
+
 
 
 # Tâche 3 : création d'une passerelle Internet
@@ -164,28 +194,37 @@ Sélectionnez Attacher une passerelle Internet.
 Cette action permet d'attacher la passerelle Internet au VPC de l'atelier. Bien que vous ayez créé une passerelle Internet et que vous l'ayez attachée à votre VPC, vous devez encore configurer la table de routage du sous-réseau public pour qu'il utilise la passerelle Internet.
 
 
+
 <img width="1014" height="379" alt="image" src="https://github.com/user-attachments/assets/7f49f568-e40a-45bf-82d3-5bd9b5debbb4" />
+
 
 
 <--------------->
 
 
+
 <img width="1171" height="332" alt="image" src="https://github.com/user-attachments/assets/fba4ccaa-3742-4491-b672-d5c69ce58497" />
+
 
 
 <------------->
 
 
+
 <img width="1041" height="255" alt="image" src="https://github.com/user-attachments/assets/c3af51e5-2da8-4b1b-8bcd-ba36ae4b8fc1" />
+
 
 
 <----------------->
 
 
+
 <img width="1141" height="350" alt="image" src="https://github.com/user-attachments/assets/e45fff34-76e2-4bac-be75-164badfdf0b7" />
 
 
+
 <------------------>
+
 
 
 
@@ -231,24 +270,34 @@ associer la table de routage à un sous-réseau, qui devient alors un sous-rése
 
 
 
+
  <img width="1157" height="437" alt="image" src="https://github.com/user-attachments/assets/4012e6ae-95f7-49eb-9071-7fe9ba1f9d6b" />
 
 
+
+
  <----------------------->
+
+
 
 
  <img width="1187" height="387" alt="image" src="https://github.com/user-attachments/assets/fbdfb6a1-5fd3-4c0b-bec1-7cc5c40da85b" />
 
 
 
+
 <----------------->
+
+
 
 
 <img width="1136" height="425" alt="image" src="https://github.com/user-attachments/assets/5991bdf8-ee75-42a9-8d9c-95fa686d791a" />
 
 
 
+
 <----------------->
+
 
 
 
@@ -257,7 +306,9 @@ associer la table de routage à un sous-réseau, qui devient alors un sous-rése
 
 
 
+
 <----------------->
+
 
 
 
@@ -265,7 +316,9 @@ associer la table de routage à un sous-réseau, qui devient alors un sous-rése
 
 
 
+
 <---------------->
+
 
 
 
@@ -273,7 +326,9 @@ associer la table de routage à un sous-réseau, qui devient alors un sous-rése
 
 
 
+
 <--------------->
+
 
 
 Associations des sous-reseaux 
@@ -283,7 +338,9 @@ Associations des sous-reseaux
 
 
 
+
 <---------------->
+
 
 
 
@@ -291,7 +348,9 @@ Associations des sous-reseaux
 
 
 
+
 <----------------->
+
 
 
 
@@ -304,7 +363,9 @@ associer la table de routage à un sous-réseau, qui devient alors un sous-rése
 
 
 
+
 <------------------->
+
 
 
 # Tâche 5 : création d'un groupe de sécurité pour le serveur d'application
@@ -326,7 +387,9 @@ Vous utiliserez le groupe de sécurité App-SG dans la prochaine tâche.
 
 
 
+
 <img width="1158" height="773" alt="image" src="https://github.com/user-attachments/assets/38c271f3-ba6c-4d84-8d33-cbd26076cb68" />
+
 
 
 
@@ -336,11 +399,14 @@ Vous utiliserez le groupe de sécurité App-SG dans la prochaine tâche.
 
 
 
+
 <img width="1310" height="428" alt="image" src="https://github.com/user-attachments/assets/cf876119-71e5-4b25-b9c0-ff9d63aee73f" />
 
 
 
+
 <------------------->
+
 
 
 
@@ -365,7 +431,9 @@ Développez le volet Détails avancés et, pour Profil d'instance IAM, choisisse
 
 
 
+
 <img width="1481" height="445" alt="image" src="https://github.com/user-attachments/assets/8101d3e0-0ba5-485d-a438-7ea098b7a381" />
+
 
 
 
@@ -373,11 +441,14 @@ Développez le volet Détails avancés et, pour Profil d'instance IAM, choisisse
 
 
 
+
 <img width="1533" height="194" alt="image" src="https://github.com/user-attachments/assets/134aa076-d0e8-40fe-862f-956c2140018f" />
 
 
 
+
 <--------------->
+
 
 
 
@@ -385,7 +456,9 @@ Développez le volet Détails avancés et, pour Profil d'instance IAM, choisisse
 
 
 
+
 <------------------>
+
 
 
 
@@ -393,11 +466,16 @@ Développez le volet Détails avancés et, pour Profil d'instance IAM, choisisse
 
 
 
+
 <--------------->
 
 
 
+
 <img width="1382" height="390" alt="image" src="https://github.com/user-attachments/assets/a8599a2f-a844-410a-84b4-58e456069d11" />
+
+
+
 
 
 <===============>
@@ -406,13 +484,17 @@ Développez le volet Détails avancés et, pour Profil d'instance IAM, choisisse
 
 
 
+
 <img width="528" height="683" alt="image" src="https://github.com/user-attachments/assets/858651f3-ec5b-4a75-aa1d-e2db4fd66bee" />
 
 
 
+
 <===============>
 <===============>
 <===============>
+
+
 
 
 
