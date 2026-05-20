@@ -294,6 +294,47 @@ Associations des sous-reseaux
 
 
 
+Le sous-réseau public est désormais public, car il possède une entrée de table de routage qui envoie le trafic vers Internet par le biais de la passerelle Internet.
+Pour résumer, vous pouvez créer un sous-réseau public en effectuant les étapes suivantes :
+créer une passerelle Internet ;
+créer une table de routage ;
+ajouter une route à la table de routage qui dirige le trafic 0.0.0.0/0 vers la passerelle Internet ;
+associer la table de routage à un sous-réseau, qui devient alors un sous-réseau public.
+
+
+
+<------------------->
+
+
+# Tâche 5 : création d'un groupe de sécurité pour le serveur d'application
+Un groupe de sécurité fait office de pare-feu virtuel pour les instances afin de contrôler le trafic entrant et sortant. Les groupes de sécurité fonctionnent au niveau de l'interface Réseau Élastique de l'instance. Les groupes de sécurité ne fonctionnent pas au niveau du sous-réseau. Par conséquent, chaque instance peut avoir son propre pare-feu qui contrôle le trafic. Si vous ne spécifiez pas de groupe de sécurité en particulier lors du lancement, l'instance est automatiquement affectée au groupe de sécurité par défaut du VPC.
+Au cours de cette tâche, vous allez créer un groupe de sécurité qui permet aux utilisateurs d'accéder à votre serveur d'application via HTTP.
+Dans le volet de navigation de gauche, sélectionnez Groupes de sécurité.
+Sélectionnez Créer un groupe de sécurité.
+Sur la page Créer un groupe de sécurité, configurez les options suivantes :
+Nom du groupe de sécurité : saisissez App-SG.
+Description : saisissez Allow HTTP traffic.
+VPC : choisissez Lab VPC (VPC de l'atelier).
+Dans la section Règles entrantes, choisissez Ajouter une règle et configurez les options suivantes :
+Type : choisissez HTTP.
+Source : choisissez Anywhere-IPv4.
+Pour Description - facultative : saisissez Allow web access.
+Le paramétrage de règles entrantes détermine le trafic autorisé à atteindre l'instance. Vous allez les configurer pour autoriser le trafic HTTP (port 80) en provenance de n'importe où sur Internet (0.0.0.0/0).
+Sélectionnez Créer un groupe de sécurité.
+Vous utiliserez le groupe de sécurité App-SG dans la prochaine tâche.
+
+
+<img width="1158" height="773" alt="image" src="https://github.com/user-attachments/assets/38c271f3-ba6c-4d84-8d33-cbd26076cb68" />
+
+
+<--------------->
+
+
+
+
+
+
+
 
 
 
