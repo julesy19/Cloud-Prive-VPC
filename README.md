@@ -330,6 +330,15 @@ Vous utiliserez le groupe de sécurité App-SG dans la prochaine tâche.
 <--------------->
 
 
+<img width="1310" height="428" alt="image" src="https://github.com/user-attachments/assets/cf876119-71e5-4b25-b9c0-ff9d63aee73f" />
+
+
+
+<------------------->
+
+
+
+
 
 
 
