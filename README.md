@@ -76,6 +76,7 @@ Au cours de cette tâche, vous allez créer un sous-réseau public et un sous-r�
 <img width="821" height="381" alt="image" src="https://github.com/user-attachments/assets/713df666-1cc7-4b8c-bf0e-dbae0f26db16" />
 
 
+
 <----------==>
 
 # Tâche 2.1 : création d'un sous-réseau public
@@ -324,10 +325,15 @@ Sélectionnez Créer un groupe de sécurité.
 Vous utiliserez le groupe de sécurité App-SG dans la prochaine tâche.
 
 
+
 <img width="1158" height="773" alt="image" src="https://github.com/user-attachments/assets/38c271f3-ba6c-4d84-8d33-cbd26076cb68" />
 
 
+
+
 <--------------->
+
+
 
 
 <img width="1310" height="428" alt="image" src="https://github.com/user-attachments/assets/cf876119-71e5-4b25-b9c0-ff9d63aee73f" />
