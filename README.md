@@ -344,7 +344,67 @@ Vous utiliserez le groupe de sécurité App-SG dans la prochaine tâche.
 
 
 
+# Tâche 6 : lancement d'un serveur d'application dans le sous-réseau public
+Pour vérifier que votre VPC est correctement configuré, vous allez lancer à présent une instance EC2 dans le sous-réseau public. Vous allez également vérifier que vous pouvez accéder à l'instance EC2 à partir d'Internet.
+Dans la barre de recherche de la console de gestion AWS, saisissez et sélectionnez EC2 pour ouvrir la console Amazon EC2.
+Choisissez Lancer une instance.
+Sur la page Lancer une instance, configurez les options suivantes :
+Pour Nom, saisissez App Server.
+Dans la section Application and OS Images (Amazon Machine Image) (Images des applications et du système d'exploitation [Amazon Machine Image]), configurez les options suivantes :
+Pour Démarrage rapide, conservez la valeur Amazon Linux par défaut. 
+Pour Amazon Machine Image (AMI), conservez l'option Amazon Linux 2023 AMI par défaut.
+Dans la section Type d'instance, conservez l'option t2.micro par défaut.
+Pour Key pair name - required (Nom de la paire de clés - obligatoire), sélectionnez vockey.
+Dans la section Paramètres réseau, sélectionnez Modifier puis configurez les options suivantes : 
+Pour VPC - required (VPC - obligatoire) : sélectionnez Lab VPC (VPC de l'atelier).
+Pour Sous-réseau, choisissez Sous-réseau public.
+Pour Pare-feu (groupes de sécurité), choisissez Sélectionner un groupe de sécurité existant.
+Pour Groupes de sécurité courants, choisissez App-SG.
+Dans la section Configurer le stockage, conservez les paramètres par défaut.
+Développez le volet Détails avancés et, pour Profil d'instance IAM, choisissez Inventory-App-Role.
 
+
+
+<img width="1481" height="445" alt="image" src="https://github.com/user-attachments/assets/8101d3e0-0ba5-485d-a438-7ea098b7a381" />
+
+
+
+<-------------->
+
+
+
+<img width="1533" height="194" alt="image" src="https://github.com/user-attachments/assets/134aa076-d0e8-40fe-862f-956c2140018f" />
+
+
+
+<--------------->
+
+
+
+<img width="1522" height="253" alt="image" src="https://github.com/user-attachments/assets/5570549a-ede8-4119-afae-18a1a492840f" />
+
+
+
+<------------------>
+
+
+
+<img width="1451" height="647" alt="image" src="https://github.com/user-attachments/assets/8a2894a6-d0da-4bec-854f-94b45c64d22b" />
+
+
+
+<--------------->
+
+
+
+<img width="1382" height="390" alt="image" src="https://github.com/user-attachments/assets/a8599a2f-a844-410a-84b4-58e456069d11" />
+
+
+
+<--------------->
+
+
+Merci 
 
 
 
