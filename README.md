@@ -49,11 +49,14 @@ Sélectionnez Enregistrer.
 Toutes les instances EC2 lancées dans le VPC reçoivent désormais automatiquement un nom d'hôte DNS. En outre, vous pouvez ajouter ultérieurement un nom DNS plus significatif (par exemple, app.exemple.com) à l'aide d'Amazon Route 53.
 
 
+
 <img width="1498" height="221" alt="image" src="https://github.com/user-attachments/assets/81a20098-8c5b-4fb7-a1f8-6489faa4d27e" />
 
 
 
+
 <img width="1436" height="539" alt="image" src="https://github.com/user-attachments/assets/40f0262f-0824-4b75-98e8-d289e51b3f4e" />
+
 
 
 <------------------>
